@@ -1,4 +1,8 @@
-# ChatGPT <img src="https://github.com/acheong08/ChatGPT/blob/main/logo.png?raw=true" width="7%"></img>
+# ChatGPT4 API
+
+  分享ChatGPT4 Plus 会员功能
+
+- [电报](https://t.me/ai55555)
 
 [![PyPi](https://img.shields.io/pypi/v/revChatGPT.svg)](https://pypi.python.org/pypi/revChatGPT)
 [![Downloads](https://static.pepy.tech/badge/revchatgpt)](https://pypi.python.org/pypi/revChatGPT)
@@ -6,9 +10,11 @@
 Reverse Engineered ChatGPT API by OpenAI. Extensible for chatbots etc.
 
 > ## Support my work
+>
 > Make a pull request and fix my bad code.
 
 # Installation
+
 `pip3 install --upgrade revChatGPT`
 
 <details>
@@ -16,10 +22,12 @@ Reverse Engineered ChatGPT API by OpenAI. Extensible for chatbots etc.
 <summary>
 
 # V1 Standard ChatGPT
+>
 > Update 2023/03/10 11:00AM - Everything works
 > > 3:35 PM - Rate limit at 5 requests / 10 seconds due to small server (I ran out of budget.)
 
 > ### [Privacy policy](https://github.com/acheong08/ChatGPT/blob/main/PRIVACY.md)
+>
 > <br>
 >
 > #### [Discussion regarding data collection](https://github.com/acheong08/ChatGPT/discussions/1147)
@@ -34,15 +42,20 @@ Reverse Engineered ChatGPT API by OpenAI. Extensible for chatbots etc.
 2. Save your email and password
 
 ### Authentication method: (Choose 1)
+
 #### - Email/Password
+
 Not supported for Google/Microsoft accounts
+
 ```json
 {
   "email": "email",
   "password": "your password"
 }
 ```
+
 #### - Session token
+
 Comes from cookies on chat.openai.com as "__Secure-next-auth.session-token"
 
 ```json
@@ -50,15 +63,18 @@ Comes from cookies on chat.openai.com as "__Secure-next-auth.session-token"
   "session_token": "..."
 }
 ```
+
 #### - Access token
-https://chat.openai.com/api/auth/session
+
+<https://chat.openai.com/api/auth/session>
+
 ```json
 {
   "access_token": "<access_token>"
 }
 ```
 
-#### - Optional configuration:
+#### - Optional configuration
 
 ```json
 {
@@ -70,6 +86,7 @@ https://chat.openai.com/api/auth/session
   "model": "gpt-4"
 }
 ```
+
 Analytics is disabled by default. Set `collect_analytics` to `true` to enable it.
 
 3. Save this as `$HOME/.config/revChatGPT/config.json`
@@ -97,10 +114,10 @@ The command line interface supports multi-line inputs and allows navigation usin
 
 Set the environment variable `NO_COLOR` to `true` to disable color output.
 
-
 ### Developer API
 
-#### Basic example (streamed):
+#### Basic example (streamed)
+
 ```python
 from revChatGPT.V1 import Chatbot
 
@@ -120,7 +137,7 @@ for data in chatbot.ask(
 print()
 ```
 
-#### Basic example (single result):
+#### Basic example (single result)
 
 ```python
 from revChatGPT.V1 import Chatbot
@@ -140,25 +157,29 @@ for data in chatbot.ask(
 
 print(response)
 ```
+
 #### All API methods
+
 Refer to the [wiki](https://github.com/acheong08/ChatGPT/wiki/V1) for advanced developer usage.
 
 </details>
-
 
 <details>
 
 <summary>
 
 # V3 Official Chat API
+>
 > Recently released by OpenAI
+>
 > - Paid
 
 </summary>
 
-Get API key from https://platform.openai.com/account/api-keys
+Get API key from <https://platform.openai.com/account/api-keys>
 
 ## Command line
+
 `python3 -m revChatGPT.V3 --api_key <api_key>`
 
 ```
@@ -194,6 +215,7 @@ options:
 ## Developer API
 
 ### Basic example
+
 ```python
 from revChatGPT.V3 import Chatbot
 chatbot = Chatbot(api_key="<api_key>")
@@ -201,6 +223,7 @@ chatbot.ask("Hello world")
 ```
 
 ### Streaming example
+
 ```python
 from revChatGPT.V3 import Chatbot
 chatbot = Chatbot(api_key="<api_key>")
