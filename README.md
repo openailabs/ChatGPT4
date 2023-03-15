@@ -1,8 +1,15 @@
 # ChatGPT4 API
 
-  分享ChatGPT4 Plus 会员功能
+| 模型 | 最大Token数 |
+| ------- | ------- |
+| gpt-4 | 8192 |
+| gpt-4-0314 | 8192 |
+| gpt-4-32k | 32768 |
+| gpt-4-32k-0314 | 32768 |
+| gpt-3.5-turbo | 4096 |
+| gpt-3.5-turbo-0301 | 4096 |
 
-- [电报](https://t.me/ai55555)
+  分享openai chatgpt4 Plus 会员功能 [电报](https://t.me/ai55555)
 
 [![PyPi](https://img.shields.io/pypi/v/revChatGPT.svg)](https://pypi.python.org/pypi/revChatGPT)
 [![Downloads](https://static.pepy.tech/badge/revchatgpt)](https://pypi.python.org/pypi/revChatGPT)
