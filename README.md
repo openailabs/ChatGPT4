@@ -30,7 +30,7 @@ Reverse Engineered ChatGPT API by OpenAI. Extensible for chatbots etc.
 
 # V1 Standard ChatGPT
 >
-> Update 2023/03/10 11:00AM - Everything works
+> Update 2023/03/15 11:00AM - chatgpt-4 model
 > > 3:35 PM - Rate limit at 5 requests / 10 seconds due to small server (I ran out of budget.)
 
 > ### [Privacy policy](https://github.com/acheong08/ChatGPT/blob/main/PRIVACY.md)
@@ -254,3 +254,7 @@ This is not an official OpenAI product. This is a personal project and is not af
 
 - [virtualharby](https://twitter.com/virtualharby) - Memes for emotional support
 - [All contributors](https://github.com/acheong08/ChatGPT/graphs/contributors) - Pull requests
+
+# Keywords
+
+  openai chatgpt chatgpt4 chat-gpt-4 chatgpt-4 gpt4
